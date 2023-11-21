@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Design_hotel</string>
+    <string name="text1">Стандартный с видом на бассейн или сад</string>
+    <string name="text2">Все включено</string>
+    <string name="text3">Кондиционер</string>
+    <string name="text5">Подробнее о номере</string>
+    <string name="text6">186 600 ₽</string>
+    <string name="text7">за 7 ночей с перелётом</string>
+    <string name="text8">Выбрать номер</string>
+    <string name="text9">Steigenberger Makadi</string>
+    <string name="text10">Заказ оплачен</string>
+    <string name="text11">Ваш заказ принят в работу</string>
+    <string name="text12">Подтверждение заказа №104893 может занять некоторое время (от 1 часа до суток). Как только мы получим ответ от туроператора, вам на почту придет уведомление.</string>
+    <string name="text13">Супер!</string>
+    <string name="todo">TODO</string>
+</resources>

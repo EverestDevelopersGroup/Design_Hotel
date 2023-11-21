@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6FAFB"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FFFFFF">
+
+
+        <TextView
+            android:id="@+id/tex"
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/text9"
+
+
+            android:textSize="18sp"
+            android:textColor="@color/black" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:gravity="center|start">
+            <!-- TextView -->
+
+
+
+            <ImageView
+                android:id="@+id/imag"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/left_button"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+
+                android:contentDescription="@string/app_name" />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        >
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="356dp"
+            android:layout_height="277dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="#FFFFFF"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="21dp">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="356dp"
+                android:layout_height="277dp"
+                android:layout_gravity="center" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCardView"
+                android:layout_width="120dp"
+                android:layout_height="23dp"
+                app:cardCornerRadius="5dp"
+                android:layout_gravity="center|bottom"
+                android:layout_marginBottom="15dp">
+
+                <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dot2"
+                    app:dotsColor="@color/black"
+                    android:layout_gravity="center"
+                    app:selectedDotColor="#9E9C9C"
+                    app:dotsSize="10dp"
+                    app:dotsSpacing="2dp"
+                    app:stiffness="105" />
+            </com.google.android.material.card.MaterialCardView>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="356dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="@string/text1"
+
+
+            />
+
+        <LinearLayout
+            android:layout_width="356dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:backgroundTint="#F5F5FA"
+                android:text="@string/text2"
+                android:clickable="true"
+                android:foreground="?selectableItemBackground"
+                app:cornerRadius="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:textColor="#828796"
+
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:backgroundTint="#F5F5FA"
+                android:text="@string/text3"
+                android:clickable="true"
+                android:foreground="?selectableItemBackground"
+
+                app:cornerRadius="5dp"
+                android:layout_gravity="center"
+                android:textColor="#828796" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="356dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center|start">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="212dp"
+                android:layout_height="49dp"
+                android:backgroundTint="#E6F6FD"
+                android:clickable="true"
+                android:foreground="?selectableItemBackground"
+
+                app:strokeColor="@color/white"
+                android:layout_gravity="center|start"
+                android:textColor="#0D72FF">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="15dp"
+                    android:gravity="center">
+                    <!-- TextView -->
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="39dp"
+                        android:layout_gravity="center"
+                        android:gravity="center|end"
+                        android:text="@string/text5"
+
+                        android:textSize="16sp"
+                        android:textColor="#0D72FF" />
+                    <!-- ImageView -->
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/right_button"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/app_name" />
+
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="356dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center"
+
+
+            >
+
+            <TextView
+                android:id="@+id/tex3"
+                android:layout_width="152dp"
+                android:layout_height="49dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/text6"
+
+                android:textSize="30sp"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="202dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="49dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                android:text="@string/text7"
+
+                android:textSize="16sp"
+                android:textColor="#828796" />
+
+
+        </LinearLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/next_page"
+            android:layout_width="356dp"
+            android:layout_height="62dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:text="@string/text8"
+            android:backgroundTint="#0D72FF" />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
